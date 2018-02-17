@@ -1,5 +1,6 @@
+library (dplyr)
 library (data.table)
-## putting required dates into 2 date vectors
+library (lubridate)## putting required dates into 2 date vectors
 sdate <- as.Date("2007-02-01")  ## start date
 edate <- as.Date("2007-02-02")  ## end date
 ##reading and subseting date based on required dates
