@@ -1,3 +1,4 @@
+library (data.table)
 ## setting start and end date, as specified in the assignment 
 sdate<-as.Date("2007-02-01")
 edate <- as.Date("2007-02-02")
