@@ -1,3 +1,8 @@
+library (data.table)
+## putting required dates into 2 date vectors
+sdate <- as.Date("2007-02-01")  ## start date
+edate <- as.Date("2007-02-02")  ## end date
+##reading and subseting date based on required dates
 mydata <- read.table("./pconsumption/household_power_consumption.txt", 
                      stringsAsFactors = FALSE, sep=";", header = TRUE , na.strings = "?" ,
                      colClasses = c("character" ,"character", "numeric", "numeric","numeric","numeric",
