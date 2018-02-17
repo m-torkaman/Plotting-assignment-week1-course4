@@ -21,8 +21,8 @@ with(mydata, {plot(date_time, Sub_metering_1, type="l",
              points(x=date_time, y=Sub_metering_2, col="red", type = "l")
              points(x=date_time, y=Sub_metering_3, col= "blue", type = "l")
          })
-legend("topright",pch=c("_","_","_"),col=c("black","red","blue"),
-       legend=c("Sub_metering_1","Sub_metering_2", "Sub_metering_3" ))
+legend("topright", c("Sub_metering_1", "Sub_metering_2","Sub_metering_3"), 
+       col=c("black", "red", "blue"), lty = 1, cex = 0.9)
 
 
 dev.off()
