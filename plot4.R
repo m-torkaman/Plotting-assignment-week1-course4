@@ -25,11 +25,11 @@ with(mydata, plot(date_time, Global_active_power ,type="l",
 
 with(mydata, {plot(date_time, Sub_metering_1, type="l",  mar=c(2,2,0,0),
                    ylab= "Energy sub mettering", xlab = "")
-        points(x=date_time, y=Sub_metering_2, col="red", type = "l")
-        points(x=date_time, y=Sub_metering_3, col= "blue", type = "l")
+        lines(x=date_time, y=Sub_metering_2, col="red")
+        lines(x=date_time, y=Sub_metering_3, col= "blue")
 })
-legend("topright",pch=c("_","_","_"),col=c("black","red","blue"), bty = "n",
-       legend=c("Sub_metering_1","Sub_metering_2", "Sub_metering_3" ))
+legend("topright", c("Sub_metering_1", "Sub_metering_2","Sub_metering_3"), col=c("black", "red", "blue"), lty = 1, cex = 0.9)
+
 
 ## Third plot (Top Right)
 with(mydata, plot(date_time, Voltage ,type="l", 
